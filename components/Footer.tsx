@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 export default function Footer() {
@@ -5,11 +6,20 @@ export default function Footer() {
     <footer className="bg-navy text-white/70 py-8">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          <div className="text-center md:text-left">
-            <p className="font-oswald text-white text-lg tracking-wider mb-1">
-              Divine Success Investments Limited
-            </p>
-            <p>Reg No: 120180001032 | TPIN: 1008600487</p>
+          <div className="text-center md:text-left flex items-center gap-3">
+            <Image
+              src="/logo.jpeg"
+              alt="DSIL Logo"
+              width={48}
+              height={48}
+              className="h-12 w-auto"
+            />
+            <div>
+              <p className="font-oswald text-white text-lg tracking-wider mb-1">
+                Divine Success Investments Limited
+              </p>
+              <p>Reg No: 120180001032 | TPIN: 1008600487</p>
+            </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <a

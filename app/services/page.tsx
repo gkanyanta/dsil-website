@@ -19,8 +19,7 @@ const services = [
   {
     icon: BoltIcon,
     title: "Electrical Construction",
-    image:
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80",
+    image: "/images/img-05.jpeg",
     description:
       "Comprehensive electrical construction services covering the full spectrum of power infrastructure from low voltage to high voltage systems.",
     capabilities: [
@@ -39,8 +38,7 @@ const services = [
   {
     icon: SunIcon,
     title: "Solar PV Systems",
-    image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
+    image: "/images/img-09.jpeg",
     description:
       "End-to-end solar photovoltaic solutions from design through commissioning and ongoing maintenance for all system types.",
     capabilities: [
@@ -57,8 +55,7 @@ const services = [
   {
     icon: WrenchScrewdriverIcon,
     title: "Equipment Supply",
-    image:
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
+    image: "/images/img-26.jpeg",
     description:
       "Supply of internationally renowned electrical equipment and components for power generation, transmission, and distribution.",
     capabilities: [
@@ -77,8 +74,7 @@ const services = [
   {
     icon: BuildingOfficeIcon,
     title: "Civil Infrastructure",
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+    image: "/images/img-23.jpeg",
     description:
       "Design, construction, and commissioning of civil works supporting electrical and industrial projects across Zambia.",
     capabilities: [
@@ -94,8 +90,7 @@ const services = [
   {
     icon: CpuChipIcon,
     title: "SCADA & Automation",
-    image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+    image: "/images/img-19.jpeg",
     description:
       "Advanced control systems and automation solutions for power utilities and industrial operations.",
     capabilities: [

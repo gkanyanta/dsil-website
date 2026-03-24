@@ -8,8 +8,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
 const slides = [
   {
-    image:
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1920&q=80",
+    image: "/images/img-03.jpeg",
     tag: "Electrical Engineering",
     title: "Powering Zambia's",
     accent: "Future",
@@ -17,8 +16,7 @@ const slides = [
       "Expert electrical construction, supply, and commissioning services across the Copperbelt and beyond.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80",
+    image: "/images/img-01.jpeg",
     tag: "Renewable Energy",
     title: "Clean Energy",
     accent: "Solutions",
@@ -26,8 +24,7 @@ const slides = [
       "Design, installation, and maintenance of solar PV systems — hybrid, grid-tied, and off-grid.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80",
+    image: "/images/img-16.jpeg",
     tag: "Industry Partners",
     title: "Trusted by Industry",
     accent: "Leaders",
