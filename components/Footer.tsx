@@ -23,11 +23,11 @@ export default function Footer() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <a
-              href="mailto:divinesuccessltd@gmail.com"
+              href="mailto:info@divinesuccesszm.com"
               className="flex items-center gap-2 hover:text-white transition-colors"
             >
               <EnvelopeIcon className="w-4 h-4" />
-              divinesuccessltd@gmail.com
+              info@divinesuccesszm.com
             </a>
             <a
               href="tel:+260972817912"

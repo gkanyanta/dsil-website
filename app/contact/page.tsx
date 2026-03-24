@@ -201,10 +201,10 @@ export default function ContactPage() {
                   <p className="font-medium text-navy">Email</p>
                   <p className="text-gray-600 text-sm">
                     <a
-                      href="mailto:divinesuccessltd@gmail.com"
+                      href="mailto:info@divinesuccesszm.com"
                       className="hover:text-red"
                     >
-                      divinesuccessltd@gmail.com
+                      info@divinesuccesszm.com
                     </a>
                   </p>
                 </div>
