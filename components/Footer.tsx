@@ -10,9 +10,9 @@ export default function Footer() {
             <Image
               src="/logo.jpeg"
               alt="DSIL Logo"
-              width={48}
-              height={48}
-              className="h-12 w-auto"
+              width={64}
+              height={64}
+              className="h-16 w-auto"
             />
             <div>
               <p className="font-oswald text-white text-lg tracking-wider mb-1">

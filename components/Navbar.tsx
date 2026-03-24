@@ -21,14 +21,14 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-navy border-b-2 border-red">
-      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
-        <Link href="/" className="flex items-center gap-2">
+      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-20">
+        <Link href="/" className="flex items-center gap-3">
           <Image
             src="/logo.jpeg"
             alt="DSIL Logo"
-            width={40}
-            height={40}
-            className="h-10 w-auto"
+            width={56}
+            height={56}
+            className="h-14 w-auto"
           />
           <span className="font-oswald text-white text-xl font-bold tracking-wider">
             DSIL
