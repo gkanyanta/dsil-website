@@ -6,7 +6,6 @@ import {
   MapPinIcon,
   PhoneIcon,
   EnvelopeIcon,
-  BuildingLibraryIcon,
 } from "@heroicons/react/24/outline";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
@@ -207,22 +206,6 @@ export default function ContactPage() {
                     >
                       divinesuccessltd@gmail.com
                     </a>
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <BuildingLibraryIcon className="w-5 h-5 text-red mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-navy">
-                    Banking Details{" "}
-                    <span className="text-xs text-gray-400">
-                      (for tender purposes)
-                    </span>
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    ZANACO — Ndola West Branch
-                    <br />
-                    Account: 5996044500253
                   </p>
                 </div>
               </div>
