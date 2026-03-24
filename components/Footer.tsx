@@ -38,8 +38,19 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="mt-6 pt-4 border-t border-white/10 text-center text-xs">
-          &copy; {new Date().getFullYear()} Divine Success Investments Limited. All rights reserved.
+        <div className="mt-6 pt-4 border-t border-white/10 text-center text-xs space-y-1">
+          <p>&copy; {new Date().getFullYear()} Divine Success Investments Limited. All rights reserved.</p>
+          <p>
+            Developed by{" "}
+            <a
+              href="https://www.privtech.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-red transition-colors"
+            >
+              Privtech Solutions Limited
+            </a>
+          </p>
         </div>
       </div>
     </footer>
