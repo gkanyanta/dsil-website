@@ -9,8 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        navy: "#0d1f3c",
+        red: "#c0231e",
+        "light-gray": "#f5f7fa",
+      },
+      fontFamily: {
+        oswald: ["var(--font-oswald)"],
+        source: ["var(--font-source-sans)"],
       },
     },
   },
