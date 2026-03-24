@@ -31,6 +31,22 @@ const slides = [
     subtitle:
       "Delivering excellence for ZESCO, Konkola Copper Mines, Zambezi Portland Cement, and more.",
   },
+  {
+    image: "/images/img-17.jpeg",
+    tag: "Expert Team",
+    title: "Skilled Engineers,",
+    accent: "Quality Results",
+    subtitle:
+      "Our experienced team delivers precision testing, commissioning, and maintenance across all voltage levels.",
+  },
+  {
+    image: "/images/img-22.jpeg",
+    tag: "Infrastructure Development",
+    title: "Building Power",
+    accent: "Networks",
+    subtitle:
+      "Distribution line construction and electrical infrastructure development across Zambia's growing regions.",
+  },
 ];
 
 export default function HeroSlideshow() {
@@ -46,7 +62,7 @@ export default function HeroSlideshow() {
   );
 
   useEffect(() => {
-    const timer = setInterval(next, 4500);
+    const timer = setInterval(next, 7000);
     return () => clearInterval(timer);
   }, [next]);
 
