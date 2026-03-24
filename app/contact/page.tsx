@@ -11,7 +11,9 @@ import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [serverError, setServerError] = useState("");
 
   function validate(form: FormData): Record<string, string> {
     const errs: Record<string, string> = {};
@@ -24,7 +26,7 @@ export default function ContactPage() {
     return errs;
   }
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const errs = validate(form);
@@ -33,7 +35,36 @@ export default function ContactPage() {
       return;
     }
     setErrors({});
-    setSubmitted(true);
+    setServerError("");
+    setSending(true);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.get("name"),
+          company: form.get("company"),
+          email: form.get("email"),
+          phone: form.get("phone"),
+          service: form.get("service"),
+          message: form.get("message"),
+        }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "Failed to send message.");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setServerError(
+        err instanceof Error ? err.message : "Something went wrong. Please try again."
+      );
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -154,11 +185,15 @@ export default function ContactPage() {
                       <p className="text-red text-xs mt-1">{errors.message}</p>
                     )}
                   </div>
+                  {serverError && (
+                    <p className="text-red text-sm bg-red/10 p-3">{serverError}</p>
+                  )}
                   <button
                     type="submit"
-                    className="w-full font-oswald text-sm uppercase tracking-wider bg-red text-white px-6 py-3 rounded-sm hover:bg-red/90 transition-colors"
+                    disabled={sending}
+                    className="w-full font-oswald text-sm uppercase tracking-wider bg-red text-white px-6 py-3 rounded-sm hover:bg-red/90 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Send Message
+                    {sending ? "Sending..." : "Send Message"}
                   </button>
                 </div>
               </form>
